@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="mFS-rs-T4n" customClass="SlotCollectionViewCell" customModule="DigiflakeCoWorking" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="211" height="76"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="211" height="76"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9ga-ch-FV4" customClass="CustomUIView" customModule="DigiflakeCoWorking" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="211" height="76"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="01:00PM - 02:00PM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UUf-tC-GHz">
+                                <rect key="frame" x="0.0" y="0.0" width="211" height="76"/>
+                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="UUf-tC-GHz" secondAttribute="trailing" id="3Dt-sX-apm"/>
+                            <constraint firstAttribute="bottom" secondItem="UUf-tC-GHz" secondAttribute="bottom" id="89N-rG-l2Y"/>
+                            <constraint firstItem="UUf-tC-GHz" firstAttribute="leading" secondItem="9ga-ch-FV4" secondAttribute="leading" id="XGe-n0-79b"/>
+                            <constraint firstItem="UUf-tC-GHz" firstAttribute="top" secondItem="9ga-ch-FV4" secondAttribute="top" id="zHl-q5-xnl"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="4"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" name="cardBorderColor"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="btR-My-hmG"/>
+            <constraints>
+                <constraint firstItem="9ga-ch-FV4" firstAttribute="top" secondItem="mFS-rs-T4n" secondAttribute="top" id="VOA-9e-iHw"/>
+                <constraint firstAttribute="bottom" secondItem="9ga-ch-FV4" secondAttribute="bottom" id="iSW-Yf-Nas"/>
+                <constraint firstAttribute="trailing" secondItem="9ga-ch-FV4" secondAttribute="trailing" id="uFi-5C-ENw"/>
+                <constraint firstItem="9ga-ch-FV4" firstAttribute="leading" secondItem="mFS-rs-T4n" secondAttribute="leading" id="xqd-FF-6ph"/>
+            </constraints>
+            <size key="customSize" width="211" height="76"/>
+            <connections>
+                <outlet property="mainView" destination="9ga-ch-FV4" id="4z2-Gx-css"/>
+                <outlet property="titleLbl" destination="UUf-tC-GHz" id="N8c-4h-bXC"/>
+            </connections>
+            <point key="canvasLocation" x="148.85496183206106" y="40.845070422535215"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="cardBorderColor">
+            <color red="0.7803921568627451" green="0.81176470588235294" blue="0.9882352941176471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
